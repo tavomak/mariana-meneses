@@ -1,0 +1,85 @@
+@include MQ(MXL){
+    .ajuste-t{
+        height: 280px;
+    }
+    .ajuste-m{
+        height: 33%;
+    }
+}
+.about{
+    .wrap{
+        background: #000;
+        h2, p, hr{
+            color: white;
+            margin: 5px;
+        }
+        hr{
+            max-width: 320px;
+        }
+        h2{
+            font-family: $font-1;
+            font-style: italic;
+        }
+        p{
+            font-size: 14px;
+        }
+        img{
+            @include MQ(S){
+                display: none;
+            }
+        }
+    }
+}
+.resena{
+    p{
+        font-size: 14px;
+        margin: 20px 0 10px 0;
+    }
+}
+.about-electra, .about-swim{
+    margin: 20px 0 20px 0;
+    li{
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        font-size: 14px;
+        padding: 15px;
+    }
+    .recuadro{
+        @include MQ(MXL){
+            h2{
+                position: relative;
+                top: 40px;
+                z-index: $zindex-5;
+                max-width: 250px;
+            }
+        }
+        h2{
+            border: 2px solid;
+            padding: 10px 0 10px 25px;
+            margin: 0 auto;
+            font-size: 42px;
+            color: #bfbfbf;
+        }
+    } 
+    img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
+.about-electra{
+    .recuadro{
+        h2{
+            padding-left: 30px;
+        }
+    }
+}.about-swim{
+    .recuadro{
+        h2{
+            padding-left: 60px;
+        }
+    }
+}

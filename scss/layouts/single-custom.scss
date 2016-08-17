@@ -1,0 +1,51 @@
+.coleccion{
+    margin-top: 0;
+    @include MQ(XL){
+        padding:50px 50px 20px 50px;
+        background: $color-2;
+    }
+    .contenedor{
+        margin: 0;
+        .columna { 
+            @include MQ(SM){
+                width: 100%;
+            }
+            @include MQ(L){
+                width: 25%
+            }
+            width: 20%; }
+
+        .columna-2 { 
+            @include MQ(SM){
+                width: 100%;
+            }
+            @include MQ(L){
+                width: 50%
+            }
+            width: 40%; 
+        }
+        .texto-cont{
+            padding: 5px;
+        }
+        .texto{ 
+                border: 3px solid $color-1; 
+                padding: 20px;
+            @include MQ(MXL){
+            }
+                
+            margin-bottom: 10px;
+        }
+        .img{
+            padding: 5px;
+            
+            overflow: hidden;
+            @include MQ(S){max-height: 200px;}
+            a{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

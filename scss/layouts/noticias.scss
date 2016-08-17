@@ -1,0 +1,40 @@
+.noticia{
+    padding-bottom: 50px;
+    .contenedor{
+        display: block;
+        padding: 0;
+        .columna{
+            display: table;
+            padding: 0px;
+            margin: 0;
+            
+            .contenido{
+                width: 95%;
+                display: table;
+                border: 3px solid $color-1;
+                margin: 5px;                
+                .img{
+                    
+                    max-height: 370px;
+                    overflow: hidden;
+                    @include MQ(S){max-height: 200px;}
+                    @include MQ(S){max-height: 300px;}
+                }
+                li{
+                    margin: 5px;
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                h3{}
+                p{
+                    margin-bottom: 10px;
+                    text-align: left;
+                    padding: 5px;
+                }
+                
+            }
+        }
+    }
+}

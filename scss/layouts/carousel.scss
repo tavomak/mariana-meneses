@@ -1,0 +1,207 @@
+.carousel{
+    margin: 0;
+    .carousel-inner{
+        @include MQ(MXL){
+            max-height: 84vh;
+            overflow: hidden;
+            }
+        @include MQ(XL){
+            max-height: 87vh;
+            overflow: hidden;
+            }
+        .item{
+            img{
+                width: 100%;
+                min-width: 100%;
+                height: auto !important;
+                border: 0;
+            }
+            .color{ 
+                background: rgba(108, 106, 89, 0.2);
+                position: absolute;
+                min-height: 100%;
+                min-width: 100%;
+                @include MQ(SM){
+                    display: none;
+                }
+            }
+            .caption{
+                @include MQ(MXL){
+                    position: absolute;
+                    z-index: $zindex-1;
+                    top: 50px;
+                    right: 7%;
+                    border: 4px solid white;
+                    width: 340px;
+                    color: $white;
+                    padding: 4px 10px 15px 10px;
+                    text-align: center;
+                    background: rgba(40, 98, 103, 0.37);
+                }                    
+                h1{
+                    font-size: 72px;
+                    text-align: center;
+                    border-bottom: 1px solid white;
+                    margin: 0 5px 0 5px;
+                    padding: 0;
+                    padding-bottom: 8px;
+                }
+                h2{
+                    font-family: $font-1;
+                    font-size: 42px; 
+                    border-bottom: 1px solid white;
+                    margin: 0 5px 0 5px;
+                    padding-bottom: 5px;
+                    @include MQ(MXL){
+                        margin-bottom: 30vh;
+                    } 
+                }
+                p{
+                    margin-bottom: 15px;
+                }
+                .button{
+                    @include MQ(MXL){ 
+                        background: rgba(255,255,255,0.3);
+                        border: 2px solid $white;
+                        font-size: 18px;
+                        color: white;
+                        padding: 5px 50px 5px 50px;
+                    }
+                }
+            }
+        }        
+    }
+    .carousel-indicators{
+        .active{ 
+            background-color: white;
+            @include MQ(MXL){
+                zoom: 1.4;
+            }
+        }
+        @include MQ(SM){
+            width: 100%;
+            position:relative;
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+            height: 100%;
+            left: 0;
+        }        
+        @include MQ(MXL){
+            position: absolute;
+            left: 5%;
+            zoom: 1.3;        
+        }         
+        li{
+            background-color: $color-1;
+            border: 1px solid $color-1 ;
+            
+            @include MQ(SM){
+                width: 40px;
+                height: 40px;
+                border-radius: 40px;
+            }
+        }
+    }
+}
+
+/*.carousel{
+        
+    @include MQ(MXL){
+        max-height: 84vh;
+        overflow: hidden;
+            }
+    @include MQ(XL){
+        max-height: 91vh;
+        overflow: hidden;
+            }
+
+    .carousel-indicators{
+        @include MQ(SM){
+            width: 100%;
+            position:relative;
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+            height: 100%;
+            left: 0;
+        }        
+        @include MQ(MXL){
+            position: absolute;
+            left: 5%;
+            zoom: 1.3;        
+        }         
+        li{
+            background-color: $color-2;
+            border: 1px solid $color-2 ;
+            
+            @include MQ(SM){
+                width: 40px;
+                height: 40px;
+                border-radius: 40px;
+            }
+        }        
+    }    
+    .carousel-indicators .active{
+        background-color: white;
+        @include MQ(MXL){
+            zoom: 1.4;            
+        }
+    }
+    .carousel-inner{
+        .item{
+            max-height: 100%;
+            img{
+                min-width: 100%;
+                height: auto !important;
+                border: 0;
+            }
+            .color{
+                background: rgba(108, 106, 89, 0.2);
+                position: absolute;
+                min-height: 100%;
+                min-width: 100%;
+                @include MQ(SM){
+                    display: none;
+                }
+            }
+            .caption{
+                @include MQ(MXL){
+                    position: absolute;
+                    z-index: $zindex-1;
+                    top: 50px;
+                    right: 7%;
+                    border: 4px solid white;
+                    width: 340px;
+                    color: $white;
+                    padding: 5px;
+                    padding-bottom: 10px;
+                    text-align: center;
+                    //background: rgba(108, 106, 89, 0.28);
+                }                    
+                h1{
+                    font-size: 52px;
+                    text-align: center;
+                    border-bottom: 2px solid white;
+                    margin: 5px;
+                    @include MQ(MXL){
+                        margin-bottom: 28vh;
+                    }
+                }
+                p{
+                    margin-bottom: 10px;
+                }
+                .button{
+                    @include MQ(MXL){
+                        width: 150px;
+                        background: rgba(255,255,255,0.3);
+                        border: 2px solid $white;
+                        font-size: 18px;
+                        color: white;
+                        padding: 0 10px 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}*/

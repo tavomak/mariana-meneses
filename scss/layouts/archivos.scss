@@ -1,0 +1,77 @@
+//hr de los titulos de pagina
+.titulo{
+    margin: 0 0 15px 0;
+    border: 1px solid $color-1;
+        }
+.section-header{
+    margin: 50px 0 50px 0;
+}
+.hijo{
+    .first{
+        @include MQ(MXL){
+        padding: 0 10% 0 10%;
+            }
+    }
+    ul{
+        @include MQ(SM){
+            background: #e8e8e8;
+            margin-bottom: 25px;
+            border: 1px solid;
+        }
+        @include MQ(MXL){
+            height: 350px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 3px solid $color-1;
+        }
+        li{
+            
+            @include MQ(MXL){
+                height: 350px;
+                overflow: hidden;
+                display: block;
+            }
+            .row{
+                @include MQ(SM){
+                    margin: 10px;
+                }
+                @include MQ(MXL){
+                    height: 33%;
+                    width: 95%;
+                    margin: 0 auto;
+                    display: table;
+                    a{
+                        position: relative;
+                        bottom: -60px;
+                    }
+                }
+            }
+            img.wp-post-image{
+                @include MQ(SM){
+                    width: 100%;
+                    height: auto;
+                }                
+            }
+        }
+    }
+    @include MQ(MXL){
+        &:nth-child(even){
+            .first{
+                float: right!important;
+                border-left: 3px solid $color-1;
+            }
+            .secont{
+                float: left !important;
+            }
+        }
+        &:nth-child(odd){
+            .first{
+                float: left !important;
+                border-right: 3px solid $color-1;
+            }
+            .secont{
+                float: right!important;
+            }
+        }
+    }
+}

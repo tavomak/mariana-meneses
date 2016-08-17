@@ -1,0 +1,39 @@
+// fonts
+@font-face{
+    font-family: 'avenir-r';
+    src: url('../fonts/AvenirNextLTPro-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       //url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/AvenirNextLTPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/AvenirNextLTPro-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face{
+    font-family: 'avenir-b';
+    src: url('../fonts/AvenirNextLTPro-Demi.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       //url('../fonts/AvenirNextLTPro-Demi.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/AvenirNextLTPro-Demi.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/AvenirNextLTPro-Demi.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/AvenirNextLTPro-Demi.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+$font-1: 'avenir-r', sans-serif;
+$font-2: 'avenir-b', sans-serif;
+$regular: 400;
+$bold:700;
+
+// colors
+$color-1: #52504A;
+$color-2: #EDEDEB;
+$white: white;
+
+// z-index
+
+$zindex-1: 1;
+$zindex-2: 2;
+$zindex-3: 3;
+$zindex-4: 4;
+$zindex-5: 5;
+
+
+
