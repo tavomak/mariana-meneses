@@ -114,6 +114,7 @@ add_filter( 'loop_shop_per_page', 'cambiar_productos_por_pagina' );
 /*
 Place a cart icon with number of items and total cost in the menu bar.
 */
+
 function mariana_meneses_woomenucart($menu, $args) {
 	// Check if WooCommerce is active and add a new item to a menu assigned to "Navbar Upper Right" (Primary Navigation Menu) location
 	if ( !in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) || 'primary' !== $args->theme_location )
@@ -128,7 +129,7 @@ function mariana_meneses_woomenucart($menu, $args) {
 		$cart_contents = sprintf(_n('%d item', '%d items', $cart_contents_count, 'mariana-meneses'), $cart_contents_count);
 		$cart_total = $woocommerce->cart->get_cart_total();
     if ($cart_contents_count == 0) {
-      $menu_item = '<li><a class="woo-menu-cart" href="'. $shop_page_url .'" title="'. $start_shopping .'">';
+      $menu_item = '<li class="dn"><a class="woo-menu-cart" href="'. $shop_page_url .'" title="'. $start_shopping .'">';
     } else {
       $menu_item = '<li><a class="woo-menu-cart" href="'. $cart_url .'" title="'. $viewing_cart .'">';
     }

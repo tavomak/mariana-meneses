@@ -8,6 +8,11 @@
 }
 .hijo{
     .first{
+        h2{
+            text-align: center;
+            margin: 20px 0 0 0;
+            font-size: 26px;
+        }
         @include MQ(MXL){
         padding: 0 10% 0 10%;
             }

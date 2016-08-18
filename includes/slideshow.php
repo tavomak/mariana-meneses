@@ -8,16 +8,18 @@
                     <div class="color"></div>
                     <div class="helper"><?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?></div>
                     <div class="caption">
-                       <h1>
+                       <div class="title-pr">
                            <?php $post_type = get_post_type( $post->ID );
                             if ( $post->post_type == 'post' ) {
-                                echo 'noticia';
-                            } else {
-                                echo get_post_type();
+                                echo '<h1>noticia</h1>';
+                            }else if($post->post_type == 'electra') {
+                                echo '<a href="' .get_post_type_archive_link( 'electra'). ' "><img src="'.get_bloginfo('stylesheet_directory').'/img/mmelectra.png" class="colet-img" /></a>';
+                            }else{
+                                echo '<a href="' .get_post_type_archive_link( 'swim'). ' "><img src="'.get_bloginfo('stylesheet_directory').'/img/mmswim.png" class="colet-img" /></a>';
                             }
                            ;?>
-                        </h1>
-                        <h2><?php echo the_title();?></h2>     
+                        </div>
+                        <h2><?php echo the_title();?></h2>
                         <p>
                             <?php echo get_the_excerpt();?>
                         </p>

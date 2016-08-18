@@ -6,7 +6,6 @@
     <div class="col-xs-12 col-sm-8">
       <div id="content" role="main">
         <?php tha_content_before(); ?>
-        <hi>erroooooooooooooooooooooooooooooor 0404</hi>
         <div class="alert alert-warning">
           <h1><i class="glyphicon glyphicon-warning-sign"></i> <?php _e('Error', 'mariana-meneses'); ?> 404</h1>
           <p><?php _e('The page you were looking for does not exist.', 'mariana-meneses'); ?></p>

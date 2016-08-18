@@ -43,7 +43,7 @@
                <li class="list-inline">
                    <a href="">
                     <p class="est list-inline" >Designed and coded by</p>
-                    <img class="list-inline" src="<?php bloginfo('template_directory'); ?>/img/estela-logo.png" alt="Estela estudio de diseño">
+                    <img class="list-inline" src="<?php bloginfo('template_directory'); ?>/img/estela-logo.png" onmouseover="this.src='<?php bloginfo('template_directory'); ?>/img/estela-logo-hover.png'" onmouseout="this.src=' <?php bloginfo('template_directory'); ?>/img/estela-logo.png '" alt="Estela estudio de diseño">
                    </a>
                </li>
            </ul>

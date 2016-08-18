@@ -2,6 +2,7 @@
     <div id="preloader"></div><!--Precargador-->
     <hr>
     <div class="container-fluid text-center section-header">
+       <img src="<?php bloginfo('template_directory'); ?>/img/mmswim.png" alt=""><br>
         <h1>Colección Swim</h1>
         <p>En esta Sección encontraras información sobre eventos y producciones de la marca.</p>
     </div>
@@ -33,7 +34,7 @@
                 <ul class="row">
                     <li class="col-sm-6 first">
                         <div class="row">
-                            <h1><?php echo the_title();?></h1>
+                            <h2><?php echo the_title();?></h2>
                             <hr class="titulo">
                         </div>
                         <div class="row">

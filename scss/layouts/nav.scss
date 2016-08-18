@@ -5,15 +5,19 @@
     text-align: left;    
     .container-fluid{
         background:$white;
-        .navbar-header{             
+        padding-left: 0;
+        .navbar-header{
             img{
-                margin:5px;
-                width: 80px;
+                margin:5px 0 0 0;
+                width: 110px;
             }            
         }            
     }
 }
 .navbar-nav{
+    position: absolute;
+    bottom: -10px;
+    right: 0;
     li{
         .dropdown-menu{
         }
@@ -61,7 +65,8 @@
 }
     .title{
         font-size: 12px;
-        position: relative;
+        position: absolute;
+        bottom: 5px;
         animation: title 5s linear infinite; 
     }
     a{

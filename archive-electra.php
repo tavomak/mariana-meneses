@@ -2,6 +2,7 @@
     <div id="preloader"></div><!--Precargador-->
     <hr>
     <div class="container-fluid text-center section-header">
+       <img src="<?php bloginfo('template_directory'); ?>/img/mmelectra.png" alt="">
         <h1>Colección Electra</h1>
         <p>En esta Sección encontraras información sobre eventos y producciones de la marca.</p>
     </div>

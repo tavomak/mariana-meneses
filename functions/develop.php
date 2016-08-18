@@ -166,7 +166,7 @@ function add_theme_caps() {
 //add_action( 'admin_init', 'add_theme_caps');
 
 /* Disable WordPress Admin Bar for all users but admins. */
-  //show_admin_bar(false);
+show_admin_bar(false);
 
 //limitar el extracto
 function custom_excerpt_length( $length ) {
