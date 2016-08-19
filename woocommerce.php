@@ -2,7 +2,7 @@
     <div id="preloader"></div>
     <hr>
     <div class="container-fluid text-center section-header">
-       <img src="<?php bloginfo('template_directory'); ?>/img/mm-logo.jpg" alt="">
+       <img src="<?php bloginfo('template_directory'); ?>/img/shop.png" alt="Shop Mariana Meneses">
         <h1>Mariana Meneses Shop</h1>
         <p>En esta Sección encontraras productos que podras adquirir directamente desde el sitio web y pagar con tarjeta de credito.</p>
     </div>
