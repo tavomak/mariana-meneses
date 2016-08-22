@@ -14,7 +14,7 @@
   /* Legacy iOS */
 }
 .navbar-default {
-  margin: 0;
+  margin: 0 0 20px 0;
   border: none;
   text-align: left;
 }
@@ -27,16 +27,17 @@
   width: 110px;
 }
 
-.navbar-nav {
-  position: absolute;
-  bottom: -10px;
-  right: 0;
+@media only screen and (min-width: 768px) {
+  .navbar-nav {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+  }
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
-  background: none;
+.navbar-default .navbar-nav > li > a:hover {
+  background: #52504A;
+  color: white;
 }
 
 .navbar-default .navbar-nav > .open > a,
@@ -89,13 +90,19 @@
 }
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
   .carousel .carousel-inner {
-    max-height: 82vh;
+    max-height: 80vh;
     overflow: hidden;
   }
 }
 @media only screen and (min-width: 1281px) {
   .carousel .carousel-inner {
-    max-height: 87vh;
+    max-height: 84vh;
+    overflow: hidden;
+  }
+}
+@media handheld, only screen and (max-width: 768px) {
+  .carousel .carousel-inner .item .helper {
+    max-height: 350px;
     overflow: hidden;
   }
 }
@@ -106,7 +113,7 @@
   border: 0;
 }
 .carousel .carousel-inner .item .color {
-  background: rgba(108, 106, 89, 0.2);
+  background: rgba(103, 103, 103, 0.2);
   position: absolute;
   min-height: 100%;
   min-width: 100%;
@@ -114,6 +121,19 @@
 @media handheld, only screen and (max-width: 768px) {
   .carousel .carousel-inner .item .color {
     display: none;
+  }
+}
+.carousel .carousel-inner .item .caption .title-pr {
+  text-align: center;
+}
+@media handheld, only screen and (max-width: 768px) {
+  .carousel .carousel-inner .item .caption .title-pr {
+    margin: 20px;
+  }
+}
+@media handheld, only screen and (max-width: 768px) {
+  .carousel .carousel-inner .item .caption {
+    min-height: 260px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -127,7 +147,7 @@
     color: white;
     padding: 4px 10px 15px 10px;
     text-align: center;
-    background: rgba(40, 98, 103, 0.37);
+    background: rgba(103, 103, 103, 0.3);
   }
 }
 .carousel .carousel-inner .item .caption h1 {
@@ -139,7 +159,8 @@
 }
 .carousel .carousel-inner .item .caption h2 {
   font-family: "avenir-r", sans-serif;
-  font-size: 36px;
+  font-weight: bold;
+  font-size: 28px;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   margin: 0 5px 0 5px;
@@ -598,7 +619,7 @@ hr {
 }
 
 .section-header {
-  margin: 50px 0 50px 0;
+  margin: 50px 0 10px 0;
 }
 
 .hijo .first h2 {
@@ -676,7 +697,7 @@ hr {
 .wrap-footer {
   margin: 20px 0 0 0;
   background-color: #f5f5f5;
-  min-height: 300px;
+  display: table;
   width: 100%;
 }
 .wrap-footer h1 {
@@ -687,12 +708,19 @@ hr {
   margin: 0 0 20px 0;
 }
 .wrap-footer .social-footer {
-  margin: 25px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 350px;
+}
+.wrap-footer .social-footer .social-icon {
+  width: 33%;
 }
 .wrap-footer .copy {
   font-size: 12px;
+  margin: 20px;
 }
 .wrap-footer .est {
+  margin: 10px;
   font-size: 14px;
 }
 

@@ -1,6 +1,5 @@
 <?php get_template_part('includes/header'); ?>
 <div id="preloader"></div>
-<h1>Esto es single</h1>
 <div class="container">
     <div class="row">
 

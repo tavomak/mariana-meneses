@@ -3,8 +3,8 @@
     <hr>
     <div class="container-fluid text-center section-header">
        <img src="<?php bloginfo('template_directory'); ?>/img/mmswim.png" alt="Swim"><br>
-        <h1>Colección Swim</h1>
-        <p>En esta Sección encontraras información sobre eventos y producciones de la marca.</p>
+        <!--<h1>Colección Swim</h1>
+        <p>En esta Sección encontraras información sobre eventos y producciones de la marca.</p>-->
     </div>
     <section class="container">
         <ul>

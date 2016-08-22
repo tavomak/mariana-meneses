@@ -6,7 +6,9 @@
             $wp_query->the_post();?>
                 <div class="item">
                     <div class="color"></div>
-                    <div class="helper"><?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?></div>
+                    <div class="helper">
+                        <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+                    </div>
                     <div class="caption">
                        <div class="title-pr">
                            <?php $post_type = get_post_type( $post->ID );

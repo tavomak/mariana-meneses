@@ -8,6 +8,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link runat="server" rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico" type="image/x-icon" />
+        <link runat="server" rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico" type="image/ico" />-->
         <?php tha_head_bottom(); ?>
         <?php wp_head(); ?>
 </head>
@@ -30,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/mm-logo.jpg" alt="Mariana Meneses"><span class="title">mariana meneses</span></a>
+                <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/mm-logo.jpg" alt="Mariana Meneses"><!--<span class="title">mariana meneses</span>--></a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-upper">
                 <ul class="list-inline navbar-right">

@@ -4,9 +4,10 @@ Template Name: Contacto
 */
 ?>
 <?php get_template_part('includes/header'); ?>
+<hr>
 <div class="container-fluid text-center section-header">
-    <h1>Contacto</h1>
-    <p>En esta Sección podrás solicitar información sobre eventos y producciones de la marca.</p>
+    <!--<h1>Contacto</h1>
+    <p>En esta Sección podrás solicitar información sobre eventos y producciones de la marca.</p>-->
 </div>
 <div class="container">
   <div class="row">
@@ -29,6 +30,9 @@ Template Name: Contacto
     </div>-->
   </div><!-- /.row -->
 </div><!-- /.container -->
-
+<br>
+<br>
+<br>
+<br>
 <?php get_template_part('includes/subfooter'); ?>
 <?php get_template_part('includes/footer'); ?>
