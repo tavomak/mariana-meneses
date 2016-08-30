@@ -8,8 +8,8 @@ Template Name: Noticias
     <hr>
     <div class="sticky">
         <div class="container-fluid text-center section-header">
-            <h1>Noticias Mariana meneses</h1>
-            <p>En esta Sección encontraras información sobre eventos y producciones de la marca.</p>
+            <!--<h1>Noticias Mariana meneses</h1>
+            <p>En esta Sección encontraras información sobre eventos y producciones de la marca.</p>-->
         </div>
         <section class="container noticia">
             <ul class="row contenedor">              

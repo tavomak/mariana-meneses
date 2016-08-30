@@ -49,3 +49,43 @@
         }
     }
 }
+.contenido-single-post{
+    min-height: 50vh;
+    margin: 50px 0 50px 0;
+}
+.single-img{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.reciente{
+    .reciente-title{
+        h3{
+        }
+        hr{
+            margin-bottom: 10px;
+            border: 1px solid $color-1;
+        }
+    }
+    article{
+        padding: 5px;
+        ul{
+        border: 2px solid $color-1;
+            padding: 0;
+            .thu-content{
+                height: 180px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .title-articulo{
+                a{color: $color-1;}
+                background: $color-2;
+                padding: 5px 0 5px 15px;
+            }
+        }
+    }
+}

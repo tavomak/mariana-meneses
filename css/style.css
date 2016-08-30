@@ -90,13 +90,15 @@
 }
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
   .carousel .carousel-inner {
-    max-height: 80vh;
+    min-height: 600px;
+    max-height: 600px;
     overflow: hidden;
+    background: #EDEDEB;
   }
 }
 @media only screen and (min-width: 1281px) {
   .carousel .carousel-inner {
-    max-height: 84vh;
+    max-height: 87vh;
     overflow: hidden;
   }
 }
@@ -154,7 +156,7 @@
   font-size: 42px;
   text-align: center;
   margin: 0 5px 0 5px;
-  padding: 0;
+  padding: 10px 0 10px 0;
   padding-bottom: 8px;
 }
 .carousel .carousel-inner .item .caption h2 {
@@ -164,7 +166,7 @@
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   margin: 0 5px 0 5px;
-  padding-bottom: 5px;
+  padding: 5px 0 5px 0;
 }
 @media only screen and (min-width: 768px) {
   .carousel .carousel-inner .item .caption h2 {
@@ -533,6 +535,43 @@ hr {
 .coleccion .contenedor .img a img {
   width: 100%;
   height: auto;
+}
+
+.contenido-single-post {
+  min-height: 50vh;
+  margin: 50px 0 50px 0;
+}
+
+.single-img img {
+  width: 100%;
+  height: auto;
+}
+
+.reciente .reciente-title hr {
+  margin-bottom: 10px;
+  border: 1px solid #52504A;
+}
+.reciente article {
+  padding: 5px;
+}
+.reciente article ul {
+  border: 2px solid #52504A;
+  padding: 0;
+}
+.reciente article ul .thu-content {
+  height: 180px;
+  overflow: hidden;
+}
+.reciente article ul .thu-content img {
+  width: 100%;
+  height: auto;
+}
+.reciente article ul .title-articulo {
+  background: #EDEDEB;
+  padding: 5px 0 5px 15px;
+}
+.reciente article ul .title-articulo a {
+  color: #52504A;
 }
 
 @media only screen and (min-width: 768px) {

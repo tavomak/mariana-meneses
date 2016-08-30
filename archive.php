@@ -39,7 +39,7 @@
                                 <p>
                                     <?php echo get_the_excerpt();?>
                                 </p>
-                                <a href="<?php the_permalink();?>" class="button">Ver más...</a>
+                                <a href="<?php the_permalink();?>" class="button">Ver archivo</a>
                                 <hr class="visible-xs">
                             </div>
                         </div>
