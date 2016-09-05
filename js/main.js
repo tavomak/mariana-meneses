@@ -1,7 +1,7 @@
 $(document).ready(function () {
     
-    $('.carousel-indicators li:first').addClass('active');
-    $('.carousel-inner .item:first').addClass('active');
+    //$('.carousel-indicators li:first').addClass('active');
+    //$('.carousel-inner .item:first').addClass('active');
     
     var mq = window.matchMedia("only screen and (min-width: 780px)");
     
